@@ -2,7 +2,7 @@
 Contains instructions on various tasks done within CMSSW
 
 
-## Extracting Xsecs from MINIAOD files
+## Extracting Xsecs using MINIAOD files
 1. Setup the analyzer to extract the Xsec
    ```
    cmsrel CMSSW_10_6_0

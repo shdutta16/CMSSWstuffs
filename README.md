@@ -26,12 +26,14 @@ Contains instructions on various tasks done within CMSSW
    xrdcp root://cmsxrootd.fnal.gov//store/test/xrootd/T1_US_FNAL/store/mc/RunIIFall17MiniAODv2/ggTomonoH_aa_sinp0p35_tanb1p0_MXd10_MH3_800_MH4_150_TuneCP3_madgraph-pythia/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/140000/185FCA4F-39C0-EB11-B8A0-0242AC1C050C.root ./2HDMa_mA800_ma150_Run2Fall17_94X_MINIAOD.root
    ```
 
-## Adding package from CMSSW
-1. From the ```CMSSW/src``` do ```cmsenv```
-2. Run ```git cms-addpkg <pkg-name>``` 
-
 6. Extract the Xsec running ```cmsRun```
    ```
    cmsRun ana.py inputFiles="file:2HDMa_mA800_ma150_Run2Fall17_94X_MINIAOD.root" maxEvents=-1 &> 2HDMa_mA800_ma150_Run2Fall17_94X_MINIAOD_Xsec.txt
    ```
    This will store the stdout and stderr in the file ```2HDMa_mA800_ma150_Run2Fall17_94X_MINIAOD_Xsec.txt``` where, the Xsec can be found. 
+
+
+
+## Adding package from CMSSW
+1. From the ```CMSSW/src``` do ```cmsenv```
+2. Run ```git cms-addpkg <pkg-name>``` 

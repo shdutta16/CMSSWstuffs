@@ -30,10 +30,17 @@ Contains instructions on various tasks done within CMSSW
    ```
    cmsRun ana.py inputFiles="file:2HDMa_mA800_ma150_Run2Fall17_94X_MINIAOD.root" maxEvents=-1 &> 2HDMa_mA800_ma150_Run2Fall17_94X_MINIAOD_Xsec.txt
    ```
-   This will store the stdout and stderr in the file ```2HDMa_mA800_ma150_Run2Fall17_94X_MINIAOD_Xsec.txt``` where, the Xsec can be found. 
+   This will store the stdout and stderr in the file ```2HDMa_mA800_ma150_Run2Fall17_94X_MINIAOD_Xsec.txt``` where, the Xsec can be found.
 
 
 
 ## Adding package from CMSSW
 1. From the ```CMSSW/src``` do ```cmsenv```
 2. Run ```git cms-addpkg <pkg-name>``` 
+
+
+
+## Getting the list of files of a microAOD dataset
+``` dasgoclient -query="file dataset=/DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa/phys_higgs-Era2018_legacy_v1_Summer20UL-legacyRunII-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-cfbcbdcc72837b89d1f6329ff10bae09/USER instance=prod/phys03"```
+
+By default the instance is global. The instance needs to specified, if it's other than global. 
